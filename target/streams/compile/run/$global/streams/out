@@ -1,0 +1,376 @@
+[0m[[0minfo[0m] [0mRunning org.bdproject.Main data/letter_train.data data/letter_test.data[0m
+[0m[[31merror[0m] [0mUsing Spark's default log4j profile: org/apache/spark/log4j-defaults.properties[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:40 INFO SparkContext: Running Spark version 1.3.1[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:40 INFO SecurityManager: Changing view acls to: vamsimocherla[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:40 INFO SecurityManager: Changing modify acls to: vamsimocherla[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:40 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(vamsimocherla); users with modify permissions: Set(vamsimocherla)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO Slf4jLogger: Slf4jLogger started[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO Remoting: Starting remoting[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@192.168.0.15:61344][0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO Utils: Successfully started service 'sparkDriver' on port 61344.[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO SparkEnv: Registering MapOutputTracker[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO SparkEnv: Registering BlockManagerMaster[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO DiskBlockManager: Created local directory at /var/folders/fx/b15m35b56k7_62fxj1s8j_440000gn/T/spark-553feaf7-3ed6-4f33-8835-e975a6853c2b/blockmgr-e86ee4c9-c1e1-4a08-8366-bf8d91576f98[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO MemoryStore: MemoryStore started with capacity 1966.1 MB[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO HttpFileServer: HTTP File server directory is /var/folders/fx/b15m35b56k7_62fxj1s8j_440000gn/T/spark-2b3d9c4a-db22-48b1-8121-e47af148b4fd/httpd-54c46b13-921f-41c5-8e78-b22a871d845b[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO HttpServer: Starting HTTP Server[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO Server: jetty-8.y.z-SNAPSHOT[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO AbstractConnector: Started SocketConnector@0.0.0.0:61345[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO Utils: Successfully started service 'HTTP file server' on port 61345.[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO SparkEnv: Registering OutputCommitCoordinator[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO Server: jetty-8.y.z-SNAPSHOT[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO Utils: Successfully started service 'SparkUI' on port 4040.[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO SparkUI: Started SparkUI at http://192.168.0.15:4040[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO Executor: Starting executor ID <driver> on host localhost[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO AkkaUtils: Connecting to HeartbeatReceiver: akka.tcp://sparkDriver@192.168.0.15:61344/user/HeartbeatReceiver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO NettyBlockTransferService: Server created on 61346[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO BlockManagerMaster: Trying to register BlockManager[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO BlockManagerMasterActor: Registering block manager localhost:61346 with 1966.1 MB RAM, BlockManagerId(<driver>, localhost, 61346)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:41 INFO BlockManagerMaster: Registered BlockManager[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(133168) called with curMem=0, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 130.0 KB, free 1966.0 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(18512) called with curMem=133168, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 18.1 KB, free 1966.0 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:61346 (size: 18.1 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerMaster: Updated info of block broadcast_0_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO SparkContext: Created broadcast 0 from textFile at Main.java:559[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(133216) called with curMem=151680, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 130.1 KB, free 1965.9 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(18512) called with curMem=284896, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 18.1 KB, free 1965.9 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:61346 (size: 18.1 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerMaster: Updated info of block broadcast_1_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO SparkContext: Created broadcast 1 from textFile at Main.java:560[0m
+[0m[[0minfo[0m] [0m************************************************************************************[0m
+[0m[[0minfo[0m] [0mREADING TRAINING DATA[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO FileInputFormat: Total input paths to process : 1[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO SparkContext: Starting job: collect at Main.java:575[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Got job 0 (collect at Main.java:575) with 1 output partitions (allowLocal=false)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Final stage: Stage 0(collect at Main.java:575)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Parents of final stage: List()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Missing parents: List()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Submitting Stage 0 (MapPartitionsRDD[12] at values at Main.java:575), which has no missing parents[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(3344) called with curMem=303408, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 3.3 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(2482) called with curMem=306752, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.4 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:61346 (size: 2.4 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerMaster: Updated info of block broadcast_2_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Submitting 1 missing tasks from Stage 0 (MapPartitionsRDD[12] at values at Main.java:575)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 1334 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO HadoopRDD: Input split: file:/Users/vamsimocherla/Downloads/TestBigData/data/letter_train.data:0+724917[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 5126798 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 388 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Stage 0 (collect at Main.java:575) finished in 0.542 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Job 0 finished: collect at Main.java:575, took 0.618181 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO SparkContext: Starting job: collect at Main.java:576[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Registering RDD 4 (mapToPair at Main.java:571)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Registering RDD 6 (mapToPair at Main.java:573)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Got job 1 (collect at Main.java:576) with 1 output partitions (allowLocal=false)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Final stage: Stage 3(collect at Main.java:576)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Parents of final stage: List(Stage 1, Stage 2)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Missing parents: List(Stage 1, Stage 2)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Submitting Stage 1 (MapPartitionsRDD[4] at mapToPair at Main.java:571), which has no missing parents[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(3720) called with curMem=309234, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 3.6 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(2719) called with curMem=312954, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.7 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:61346 (size: 2.7 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerMaster: Updated info of block broadcast_3_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Submitting 1 missing tasks from Stage 1 (MapPartitionsRDD[4] at mapToPair at Main.java:571)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Submitting Stage 2 (MapPartitionsRDD[6] at mapToPair at Main.java:573), which has no missing parents[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, PROCESS_LOCAL, 1323 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(4384) called with curMem=315673, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 4.3 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: ensureFreeSpace(3198) called with curMem=320057, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 3.1 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on localhost:61346 (size: 3.1 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO BlockManagerMaster: Updated info of block broadcast_4_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO DAGScheduler: Submitting 1 missing tasks from Stage 2 (MapPartitionsRDD[6] at mapToPair at Main.java:573)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:42 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO HadoopRDD: Input split: file:/Users/vamsimocherla/Downloads/TestBigData/data/letter_train.data:0+724917[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2003 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, PROCESS_LOCAL, 1323 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 123 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Stage 1 (mapToPair at Main.java:571) finished in 0.125 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: looking for newly runnable stages[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: running: Set(Stage 2)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: waiting: Set(Stage 3)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: failed: Set()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO HadoopRDD: Input split: file:/Users/vamsimocherla/Downloads/TestBigData/data/letter_train.data:0+724917[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Missing parents for Stage 3: List(Stage 2)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing broadcast 3[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_3_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_3_piece0 of size 2719 dropped from memory (free 2061326680)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Removed broadcast_3_piece0 on localhost:61346 in memory (size: 2.7 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_3_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_3[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_3 of size 3720 dropped from memory (free 2061330400)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ContextCleaner: Cleaned broadcast 3[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 2003 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 79 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Stage 2 (mapToPair at Main.java:573) finished in 0.194 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: looking for newly runnable stages[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: running: Set()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: waiting: Set(Stage 3)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: failed: Set()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Missing parents for Stage 3: List()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting Stage 3 (MapPartitionsRDD[13] at values at Main.java:576), which is now runnable[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(4152) called with curMem=316816, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 4.1 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2798) called with curMem=320968, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.7 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on localhost:61346 (size: 2.7 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_5_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting 1 missing tasks from Stage 3 (MapPartitionsRDD[13] at values at Main.java:576)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, localhost, PROCESS_LOCAL, 3418 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 7652 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 49 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Stage 3 (collect at Main.java:576) finished in 0.050 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Job 1 finished: collect at Main.java:576, took 0.282815 s[0m
+[0m[[0minfo[0m] [0m************************************************************************************[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Starting job: count at Main.java:579[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Got job 2 (count at Main.java:579) with 1 output partitions (allowLocal=false)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Final stage: Stage 4(count at Main.java:579)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Parents of final stage: List()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Missing parents: List()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting Stage 4 (MapPartitionsRDD[4] at mapToPair at Main.java:571), which has no missing parents[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2888) called with curMem=323766, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 2.8 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2106) called with curMem=326654, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 2.1 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on localhost:61346 (size: 2.1 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_6_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting 1 missing tasks from Stage 4 (MapPartitionsRDD[4] at mapToPair at Main.java:571)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4, localhost, PROCESS_LOCAL, 1334 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO HadoopRDD: Input split: file:/Users/vamsimocherla/Downloads/TestBigData/data/letter_train.data:0+724917[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 1830 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 45 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Stage 4 (count at Main.java:579) finished in 0.046 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Job 2 finished: count at Main.java:579, took 0.051650 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Starting job: first at Main.java:580[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Got job 3 (first at Main.java:580) with 1 output partitions (allowLocal=true)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Final stage: Stage 5(first at Main.java:580)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Parents of final stage: List()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Missing parents: List()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting Stage 5 (MapPartitionsRDD[4] at mapToPair at Main.java:571), which has no missing parents[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2912) called with curMem=328760, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 2.8 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2128) called with curMem=331672, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 2.1 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on localhost:61346 (size: 2.1 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_7_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting 1 missing tasks from Stage 5 (MapPartitionsRDD[4] at mapToPair at Main.java:571)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 5, localhost, PROCESS_LOCAL, 1334 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Running task 0.0 in stage 5.0 (TID 5)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO HadoopRDD: Input split: file:/Users/vamsimocherla/Downloads/TestBigData/data/letter_train.data:0+724917[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Finished task 0.0 in stage 5.0 (TID 5). 2264 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 5) in 4 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Stage 5 (first at Main.java:580) finished in 0.004 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Job 3 finished: first at Main.java:580, took 0.013970 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Starting job: count at Main.java:581[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Registering RDD 15 (distinct at Main.java:581)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Got job 4 (count at Main.java:581) with 1 output partitions (allowLocal=false)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Final stage: Stage 7(count at Main.java:581)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Parents of final stage: List(Stage 6)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Missing parents: List(Stage 6)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting Stage 6 (MapPartitionsRDD[15] at distinct at Main.java:581), which has no missing parents[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(4176) called with curMem=333800, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 4.1 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2944) called with curMem=337976, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 2.9 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on localhost:61346 (size: 2.9 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_8_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting 1 missing tasks from Stage 6 (MapPartitionsRDD[15] at distinct at Main.java:581)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 6, localhost, PROCESS_LOCAL, 1323 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Running task 0.0 in stage 6.0 (TID 6)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO HadoopRDD: Input split: file:/Users/vamsimocherla/Downloads/TestBigData/data/letter_train.data:0+724917[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing broadcast 7[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_7_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_7_piece0 of size 2128 dropped from memory (free 2061308424)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Removed broadcast_7_piece0 on localhost:61346 in memory (size: 2.1 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_7_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_7[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_7 of size 2912 dropped from memory (free 2061311336)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ContextCleaner: Cleaned broadcast 7[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing broadcast 6[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_6_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_6_piece0 of size 2106 dropped from memory (free 2061313442)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Removed broadcast_6_piece0 on localhost:61346 in memory (size: 2.1 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_6_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_6[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_6 of size 2888 dropped from memory (free 2061316330)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ContextCleaner: Cleaned broadcast 6[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing broadcast 5[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_5_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_5_piece0 of size 2798 dropped from memory (free 2061319128)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Removed broadcast_5_piece0 on localhost:61346 in memory (size: 2.7 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_5_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_5[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_5 of size 4152 dropped from memory (free 2061323280)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ContextCleaner: Cleaned broadcast 5[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing broadcast 4[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_4_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_4_piece0 of size 3198 dropped from memory (free 2061326478)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Removed broadcast_4_piece0 on localhost:61346 in memory (size: 3.1 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_4_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManager: Removing block broadcast_4[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_4 of size 4384 dropped from memory (free 2061330862)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ContextCleaner: Cleaned broadcast 4[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Finished task 0.0 in stage 6.0 (TID 6). 2003 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 6) in 70 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Stage 6 (distinct at Main.java:581) finished in 0.070 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: looking for newly runnable stages[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: running: Set()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: waiting: Set(Stage 7)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: failed: Set()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Missing parents for Stage 7: List()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting Stage 7 (MapPartitionsRDD[17] at distinct at Main.java:581), which is now runnable[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2872) called with curMem=316354, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 2.8 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2070) called with curMem=319226, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 2.0 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on localhost:61346 (size: 2.0 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_9_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting 1 missing tasks from Stage 7 (MapPartitionsRDD[17] at distinct at Main.java:581)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 7, localhost, PROCESS_LOCAL, 1056 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Running task 0.0 in stage 7.0 (TID 7)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Finished task 0.0 in stage 7.0 (TID 7). 924 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 7) in 4 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Stage 7 (count at Main.java:581) finished in 0.004 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Job 4 finished: count at Main.java:581, took 0.087004 s[0m
+[0m[[0minfo[0m] [0mNUM_SAMPLES = 20000[0m
+[0m[[0minfo[0m] [0mDIM = 17[0m
+[0m[[0minfo[0m] [0mNUM_CLASSES = 26[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Starting job: collect at Main.java:587[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Registering RDD 19 (distinct at Main.java:587)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Got job 5 (collect at Main.java:587) with 1 output partitions (allowLocal=false)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Final stage: Stage 9(collect at Main.java:587)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Parents of final stage: List(Stage 8)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Missing parents: List(Stage 8)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting Stage 8 (MapPartitionsRDD[19] at distinct at Main.java:587), which has no missing parents[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(4176) called with curMem=321296, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 4.1 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2941) called with curMem=325472, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 2.9 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on localhost:61346 (size: 2.9 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_10_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting 1 missing tasks from Stage 8 (MapPartitionsRDD[19] at distinct at Main.java:587)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 8, localhost, PROCESS_LOCAL, 1323 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Running task 0.0 in stage 8.0 (TID 8)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO HadoopRDD: Input split: file:/Users/vamsimocherla/Downloads/TestBigData/data/letter_train.data:0+724917[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Finished task 0.0 in stage 8.0 (TID 8). 2003 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 8) in 45 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Stage 8 (distinct at Main.java:587) finished in 0.046 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: looking for newly runnable stages[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: running: Set()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: waiting: Set(Stage 9)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: failed: Set()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Missing parents for Stage 9: List()[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting Stage 9 (MapPartitionsRDD[21] at distinct at Main.java:587), which is now runnable[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2888) called with curMem=328413, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 2.8 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: ensureFreeSpace(2074) called with curMem=331301, maxMem=2061647216[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 2.0 KB, free 1965.8 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on localhost:61346 (size: 2.0 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO BlockManagerMaster: Updated info of block broadcast_11_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:839[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Submitting 1 missing tasks from Stage 9 (MapPartitionsRDD[21] at distinct at Main.java:587)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 9, localhost, PROCESS_LOCAL, 1056 bytes)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Running task 0.0 in stage 9.0 (TID 9)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO Executor: Finished task 0.0 in stage 9.0 (TID 9). 1216 bytes result sent to driver[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 9) in 3 ms on localhost (1/1)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Stage 9 (collect at Main.java:587) finished in 0.003 s[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool [0m
+[0m[[31merror[0m] [0m15/05/11 11:40:43 INFO DAGScheduler: Job 5 finished: collect at Main.java:587, took 0.062004 s[0m
+[0m[[0minfo[0m] [0m************************************************************************************[0m
+[0m[[0minfo[0m] [0mTRAINING A BINARY HIERARCHICAL DECISION TREE[0m
+[0m[[0minfo[0m] [0m------------------------------------------------------------[0m
+[0m[[0minfo[0m] [0mCLASS LABELS IN THE NODE:[0m
+[0m[[0minfo[0m] [0m8 13 19 21 4 15 16 22 25 11 14 0 24 23 1 6 17 20 12 9 7 3 18 10 5 2 [0m
+[0m[[0minfo[0m] [0mLEFT: [0m
+[0m[[0minfo[0m] [0m19 24 1 12 7 3 18 5 2 [0m
+[0m[[0minfo[0m] [0mRIGHT: [0m
+[0m[[0minfo[0m] [0m8 13 21 4 15 16 22 25 11 14 0 23 6 17 20 9 10 [0m
+[0m[[0minfo[0m] [0mTraining a Binary SVM[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO ContextCleaner: Cleaned shuffle 2[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing broadcast 11[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing block broadcast_11_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO MemoryStore: Block broadcast_11_piece0 of size 2074 dropped from memory (free 2061315915)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManagerInfo: Removed broadcast_11_piece0 on localhost:61346 in memory (size: 2.0 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManagerMaster: Updated info of block broadcast_11_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing block broadcast_11[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO MemoryStore: Block broadcast_11 of size 2888 dropped from memory (free 2061318803)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO ContextCleaner: Cleaned broadcast 11[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing broadcast 10[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing block broadcast_10_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO MemoryStore: Block broadcast_10_piece0 of size 2941 dropped from memory (free 2061321744)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManagerInfo: Removed broadcast_10_piece0 on localhost:61346 in memory (size: 2.9 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManagerMaster: Updated info of block broadcast_10_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing block broadcast_10[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO MemoryStore: Block broadcast_10 of size 4176 dropped from memory (free 2061325920)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO ContextCleaner: Cleaned broadcast 10[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO ContextCleaner: Cleaned shuffle 3[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing broadcast 9[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing block broadcast_9_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO MemoryStore: Block broadcast_9_piece0 of size 2070 dropped from memory (free 2061327990)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManagerInfo: Removed broadcast_9_piece0 on localhost:61346 in memory (size: 2.0 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManagerMaster: Updated info of block broadcast_9_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing block broadcast_9[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO MemoryStore: Block broadcast_9 of size 2872 dropped from memory (free 2061330862)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO ContextCleaner: Cleaned broadcast 9[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing broadcast 8[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing block broadcast_8_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO MemoryStore: Block broadcast_8_piece0 of size 2944 dropped from memory (free 2061333806)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManagerInfo: Removed broadcast_8_piece0 on localhost:61346 in memory (size: 2.9 KB, free: 1966.1 MB)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManagerMaster: Updated info of block broadcast_8_piece0[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO BlockManager: Removing block broadcast_8[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO MemoryStore: Block broadcast_8 of size 4176 dropped from memory (free 2061337982)[0m
+[0m[[31merror[0m] [0m15/05/11 11:40:44 INFO ContextCleaner: Cleaned broadcast 8[0m
